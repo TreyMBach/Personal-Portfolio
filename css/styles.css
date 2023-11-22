@@ -1,109 +1,213 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+/* Header Styles */
+.header {
+    background: url('../images/backgroundimage.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    height: 500px; /* Adjust the height as needed */
+    position: relative;
+}
+
+/* Add a dark overlay to ensure text stands out */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha for transparency */
+    z-index: 1;
+}
+
+/* Ensure navbar and header content are positioned above the overlay */
+.navbar, .header-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.navbar .nav-link, .navbar .btn-outline-primary {
+    color: #ffffff; /* Adjust if needed for better visibility */
+}
+
+.navbar .btn-outline-primary {
+    border-color: #ffffff;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+}
+
+/* If you're using flexbox for the .d-flex container */
+.d-flex {
+    display: flex;
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+    height: 100%; /* Full height of the nav */
+}
+
+/* If not using flexbox, ensure inline-block and text-align */
+.nav-link, .btn-outline-primary {
+    display: inline-block; /* Align as inline elements */
+    margin: 0 15px; /* Add horizontal spacing */
+}
+
+/* Adjust the nav container if needed */
+.navbar {
+    text-align: center; /* Center the navigation links */
+}
+
+.navbar .btn-outline-primary:hover {
+    background: #ffffff;
     color: #333;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ensure it spans the width of the header */
+    text-align: center; /* Align text in the center */
 }
 
-a:hover {
-    text-decoration: underline;
+/* Header Content Styles */
+.header-content h1 {
+    font-size: 3rem;
+    color: #ffffff; /* Adjust if needed for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* This will make the text stand out more */
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+.header-content .btn-primary {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
 }
+
 
 /* Header Styles */
-header {
-    background-color: #333;
-    color: #ffffff;
-    padding: 20px 0;
+.header {
+    background: url('../images/backgroundimage.png') no-repeat center center;
+    background-size: cover;
     text-align: center;
+    height: 500px; /* Adjust the height as needed */
+    position: relative;
 }
 
-header a {
+/* Add a dark overlay to ensure text stands out */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha for transparency */
+    z-index: 1;
+}
+
+/* Ensure navbar and header content are positioned above the overlay */
+.navbar, .header-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
     color: #ffffff;
-    font-size: 24px;
 }
 
-/* Navigation Button Styles */
-button.btn-primary {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+.navbar .nav-link, .navbar .btn-outline-primary {
+    color: #ffffff; /* Adjust if needed for better visibility */
 }
 
-button.btn-primary:hover {
-    background-color: #0056b3;
+.navbar .btn-outline-primary {
+    border-color: #ffffff;
 }
 
-/* Main Section Styles */
-main {
-    margin-bottom: 20px;
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
 }
 
-/* About Me Section */
-#aboutMeContainer {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* If you're using flexbox for the .d-flex container */
+.d-flex {
+    display: flex;
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+    height: 100%; /* Full height of the nav */
 }
 
-#expandedText {
-    margin-top: 15px;
+/* If not using flexbox, ensure inline-block and text-align */
+.nav-link, .btn-outline-primary {
+    display: inline-block; /* Align as inline elements */
+    margin: 0 15px; /* Add horizontal spacing */
 }
 
-/* Projects Section */
-.card {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* Adjust the nav container if needed */
+.navbar {
+    text-align: center; /* Center the navigation links */
 }
 
-.card-footer {
-    background-color: #f8f8f8;
+.navbar .btn-outline-primary:hover {
+    background: #ffffff;
+    color: #333;
 }
 
-/* Contact Section */
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ensure it spans the width of the header */
+    text-align: center; /* Align text in the center */
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
+/* Header Content Styles */
+.header-content h1 {
+    font-size: 3rem;
+    color: #ffffff; /* Adjust if needed for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* This will make the text stand out more */
+}
+
+.header-content .btn-primary {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+}
+
+
+/* General Styles */
+
+.content-section {
+    opacity: 1;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-content {
     text-align: center;
-    padding: 10px 0;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto; /* This will center your text block */
+    padding: 20px;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
 
-    header h1 {
-        font-size: 20px;
-    }
 
-    button.btn-primary {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-}
+

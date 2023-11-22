@@ -9,42 +9,40 @@
     <title>My Webpage</title>
 </head>
 <body>
-    <header class="container my-4">
-        <div class="row justify-content-between align-items-center">
-            <h1 class="col-auto">
-                <a href="#">Trey Bach</a>
-            </h1>
-            <nav class="col-auto">
-                <button class="btn btn-primary m-1" onclick="location.href='./pages/aboutme.html';">About Me</button>
-                <button class="btn btn-primary m-1" onclick="location.href='./pages/projects.html';">Projects</button>
-                <button class="btn btn-primary m-1" onclick="location.href='./pages/contact.html';">Contact</button>
-            </nav>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Trey Bach</a>
+                <div class="d-flex">
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Projects</a>
+                    <button class="btn btn-outline-primary ms-2" href="treybachdev@gmail.com">Contact Me</button>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>"In a world where you can build anything, dare to construct your dreams into reality."</h1>
         </div>
     </header>
         <!-- About Me Section -->
-        <main class="container my-4">
-            <div id='aboutMeContainer'>
-                <p id='introText'>
-                    At just 20 years old, I've turned my passion for technology into a promising career path. A recent high school graduate, I leaped straight into the dynamic world of web development
-                    through an intensive boot camp that refined my skills and ignited my creativity. Now, I'm eager to bring fresh, innovative solutions to the digital space, one line of code at a time.
-                </p>
-                <p id="expandedText">
-                    My journey in the world of technology began with an insatiable curiosity for how things work and a relentless drive to solve problems. This curiosity led me to explore various programming languages, web development frameworks, and cutting-edge technologies. I believe that technology has the power to transform lives and make the world a better place, and I am excited to be a part of this transformative journey.
-    
-                    During my journey as a web developer, I've had the opportunity to work on a wide range of projects, from building interactive websites and web applications to developing backend systems that power them. I've collaborated with talented individuals and diverse teams, learning the value of teamwork and effective communication in delivering exceptional results.
-    
-                    Beyond coding, I am passionate about staying up-to-date with the latest industry trends and best practices. I am a lifelong learner, always seeking to expand my knowledge and skills in the ever-evolving field of technology. My goal is to leverage my expertise to create user-centric, efficient, and secure solutions that make a meaningful impact.
-    
-                    When I'm not coding, you can find me exploring new technologies, reading tech blogs, or contributing to open-source projects. I also enjoy sharing my knowledge with others through tutorials and mentorship, as I believe in the importance of fostering a strong and collaborative tech community.
-    
-                    As I continue on this exciting journey, I look forward to tackling new challenges, pushing the boundaries of what's possible, and making a positive mark in the world of technology. Together, let's innovate, create, and shape the future—one line of code at a time.
-                </p>
-                <button id="readMoreBtn" class="btn btn-primary text-center">Read More</button>
+        <main class="container my-4" id="aboutMeSection">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./images/aboutSectionImageOne.png" alt="About Section Image" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="text-content">
+                        <h2>Designing Your Digital Presence</h2>
+                        <p>As a web developer with a knack for crafting engaging online experiences, I specialize in bringing small businesses into the digital age. My approach combines innovative design with functional development to create websites that not only look stunning but also drive results.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
             </div>
         </main>
 
     <!-- Projects Section -->
-    <main class="container my-4">
+    <main class="container my-4" id="projectsSection">
         <h2 class="text-center mb-4">My Projects</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Project 1 -->
@@ -87,7 +85,7 @@
     </main>
 
     <!-- Contact Section -->
-    <main class="container my-4">
+    <main class="container my-4" id="contactSection">
         <h2>Contact Me</h2>
         <p>Feel free to get in touch with me using the form below:</p>
 

@@ -40,3 +40,19 @@ function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible'); // If you want it to fade out again when out of view
+            }
+        });
+    }, { threshold: 0.1 }); // The threshold controls when the callback is executed
+
+    document.querySelectorAll('.content-section').forEach((section) => {
+        observer.observe(section);
+    });
+});
