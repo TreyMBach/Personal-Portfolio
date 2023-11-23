@@ -268,43 +268,43 @@
     background-color: #333; /* Dark background */
     color: white; /* White text */
     padding: 20px 0;
-    font-size: 0.9rem; /* Adjust the font size as desired */
+}
+
+.footer h2 {
+    font-size: 1.25rem; /* Larger font size for phone number and email */
+    margin-top: 0; /* Remove any default margin */
+}
+
+.footer p {
+    margin-bottom: 0.5rem; /* Consistent margin for p tags */
+}
+
+.footer .col {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
 }
 
 .footer a {
     color: white; /* White links */
-    margin-right: 15px; /* Spacing between icons */
     text-decoration: none; /* Removes underline from links */
+    display: inline-flex; 
+    align-items: center; /* Align items vertically */
 }
 
 .footer a img {
-    width: 24px; /* Example size for icons */
-    height: 24px; /* Example size for icons */
-    margin-right: 8px; /* Space after the icon if there is text following */
+    width: 40px; /* Adjust the width as desired */
+    height: 40px; /* Adjust the height as desired */
+    margin: 0 8px; /* Horizontal margin */
 }
 
-/* Adjustments for text associated with icons */
-.footer a:has(> img) {
-    display: inline-block;
-    align-items: center; /* Centers icon with text vertically */
-}
-
-/* For a responsive centered footer on small screens */
 @media (max-width: 768px) {
-    .footer {
-        text-align: center; /* Center everything in the footer */
-    }
-
     .footer .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer .col {
-        margin-bottom: 15px; /* Spacing between rows */
+        flex-direction: column; /* Stack columns vertically on small screens */
     }
 }
+
 
 
 
