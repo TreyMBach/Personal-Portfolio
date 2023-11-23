@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
-    <title>My Webpage</title>
+    <title>Trey Bach Portfolio</title>
 </head>
 <body>
     <!-- Header -->
@@ -50,48 +50,24 @@
             </div>
         </main>
 
-    <!-- Projects Section -->
-    <main class="container my-4" id="projectsSection">
-        <h2 class="text-center mb-4">My Projects</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Project 1 -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">World Cup</h5>
-                        <p class="card-text">In this project, I used Monte Carlo simulation to predict tournament outcomes by simulating multiple rounds until one team emerged as the winner. I ran 1000 simulations quickly with modern computing power to estimate team win probabilities.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="https://github.com/code50/64717193/tree/main/python/world-cup" class="btn btn-secondary">Source Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Credit</h5>
-                        <p class="card-text">"Credit" is a C program that verifies the validity of credit card numbers. It prompts users for input and identifies whether the card is American Express, MasterCard, Visa, or invalid, and outputs the result, making it a valuable tool for enhancing payment security.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="https://github.com/code50/64717193/tree/main/C/credit" class="btn btn-secondary">Source Code</a>
+        <main class="container my-4" id="projectsSection">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <img src="./images/worldcupsimulation.png" alt="World Cup Project" class="project-image img-fluid">
+                        <div class="project-info">
+                            <h5>World Cup Simulation</h5>
+                            <p>Monte Carlo simulation to predict outcomes.</p>
+                            <a href="https://github.com/code50/64717193/tree/main/python/world-cup" class="btn btn-outline-primary">View Details</a>
+                        </div>
                     </div>
                 </div>
+                <!-- Additional projects follow the same structure -->
             </div>
-            <!-- Project 3 -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Tideman</h5>
-                        <p class="card-text">"Tideman" is a program that manages fair elections. It processes voter preferences, calculates winning pairs, and announces the election winner. Users must implement specific functions to complete the system and ensure a transparent election process.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="https://github.com/code50/64717193/tree/main/C/tideman" class="btn btn-secondary">Source Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
+        
 
     <!-- Contact Section -->
     <!-- <main class="container my-4" id="contactSection">
