@@ -1,58 +1,40 @@
-# Challenge-2
+# Trey Bach Portfolio
 
-User Story: 
+## Introduction
+Welcome to the repository for Trey Bach's professional portfolio website. This site is a showcase of Trey's projects, skills, and services as a web developer. Built with a modern design, it highlights Trey's ability to craft engaging digital experiences.
 
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+## Features
+- **Responsive Design**: Utilizes Bootstrap for a layout that adapts to screen sizes from mobile devices to desktop monitors.
+- **Dynamic Content**: Content sections become visible as they enter the viewport, thanks to Intersection Observer API.
+- **Contact Form**: Includes a JavaScript-handled contact form with email validation.
+- **Project Showcase**: Dedicated sections for detailed project information with links to live sites or repositories.
 
+## Project Structure
+- `index.html`: The main HTML document with semantic structure for the portfolio sections.
+- `/css`: Contains the style sheets for the website.
+  - `reset.css`: Resets browser defaults for consistent cross-browser experience.
+  - `styles.css`: Custom styles for the portfolio, including responsiveness and animations.
+- `/images`: Image assets used throughout the website, such as project thumbnails and icons.
+- `script.js`: JavaScript file that includes form handling, email validation, and scroll animations.
 
-Acceptance Criteria: 
+## Usage
+The website is structured in several main sections:
+- **Header**: With a navigation bar and a call-to-action button for contacting Trey.
+- **About Me**: Introduces Trey and his approach to web development.
+- **Projects**: Highlights two key projects, "G2 Contracting LLC" and "Drop D", with brief overviews and links to view more details.
+- **Contact**: (Commented out in the provided code) A section with a form for visitors to send messages directly from the site.
+- **Footer**: Contains contact information and social media links.
 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+## Local Development
+To run this project locally:
+1. Clone the repository to your local machine.
+2. Open `index.html` in your browser to view the site.
 
-Day - 1 - 7.2.22
-Start Time - 6:30 pm
-End Time - 10:00 pm
+## Contributions
+While this is a personal portfolio website, suggestions and contributions are welcome. Please open an issue or submit a pull request if you have feedback or enhancements.
 
-Goals: To get frame done including header for flex boxes at minimum.
+## License
+This project is open-sourced under the [MIT license](LICENSE.md).
 
-Work Done:
-- Got bones of project done including text, one image in about me section and all sections labeled.
-- Was able to get flex section done for all areas as I knew that was going to give me the most trouble i wanted to get that part done first at most.
-- All areas are able to flex to whatever application so far.
-
-Day - 2 - 7.3.22
-Start Time - 9:00 pm
-End Time - 10:00 pm
-
-Goals: To get the work section done with and in order to be able to show my projects.
-
-Work Done:
-- Was about to add more to the My Work section including picture placeholders to able to input pictures for future work
-- Put flex box for those images and made it so the first image was the biggest for the currect project
-- Fixed the buttons in the navigation to go to the certain anchor tags like the "about me" or "contact me" section for navigation purposes
-
-Day - 3 - 7.4.22
-Start Time - 9:00 pm
-End Time - 11:00 pm
-
-Goals: Finish The design entirely as the frame work is done I just have to type up the bio and put in pictures wiht the appropriate styling.
-
-Work Done: 
-- Was able to finish the whole criteria including the reponsive layout.
-- Finished Typing up the bio in the about me section
-- Application has picture that allows to be click to be brought to original application
-- Commented on all html and css elements, and with semantic elements.
+## Contact
+Feel free to reach out to Trey via email at [treybachdev@gmail.com](mailto:treybachdev@gmail.com) for any inquiries.
