@@ -256,6 +256,18 @@
     color: #ffffff;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .col-md-4 {
+        max-width: 100%;
+        flex: 0 0 100%; /* This ensures that on small screens, the column takes full width */
+    }
+}
+
 @media (max-width: 767px) {
     .col-md-4 {
         max-width: 100%;

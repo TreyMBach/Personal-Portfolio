@@ -1,1 +1,4 @@
-./pages
+./images: ./images/*.png
+    ./make-images.sh
+./pages: ./pages/*.md
+    ./make-pages.sh
