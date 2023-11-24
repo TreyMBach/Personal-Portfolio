@@ -1,7 +1,7 @@
 # Trey Bach Portfolio
 
 ## Introduction
-Welcome to the repository for Trey Bach's professional portfolio website. This site is a showcase of Trey's projects, skills, and services as a web developer. Built with a modern design, it highlights Trey's ability to craft engaging digital experiences.
+Welcome to the repository for my professional portfolio website. This site is a showcase of my projects, skills, and services as a web developer. Built with a modern design, it highlights my ability to craft engaging digital experiences.
 
 ## Features
 - **Responsive Design**: Utilizes Bootstrap for a layout that adapts to screen sizes from mobile devices to desktop monitors.
@@ -19,8 +19,8 @@ Welcome to the repository for Trey Bach's professional portfolio website. This s
 
 ## Usage
 The website is structured in several main sections:
-- **Header**: With a navigation bar and a call-to-action button for contacting Trey.
-- **About Me**: Introduces Trey and his approach to web development.
+- **Header**: With a navigation bar and a call-to-action button for contacting Me.
+- **About Me**: Introduces Me and his approach to web development.
 - **Projects**: Highlights two key projects, "G2 Contracting LLC" and "Drop D", with brief overviews and links to view more details.
 - **Contact**: (Commented out in the provided code) A section with a form for visitors to send messages directly from the site.
 - **Footer**: Contains contact information and social media links.
@@ -37,4 +37,4 @@ While this is a personal portfolio website, suggestions and contributions are we
 This project is open-sourced under the [MIT license](LICENSE.md).
 
 ## Contact
-Feel free to reach out to Trey via email at [treybachdev@gmail.com](mailto:treybachdev@gmail.com) for any inquiries.
+Feel free to reach out to me via email at [treybachdev@gmail.com](mailto:treybachdev@gmail.com) for any inquiries.
